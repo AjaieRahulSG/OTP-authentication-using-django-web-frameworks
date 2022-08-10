@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Sign In Button and Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="{% static 'all/style.css' %}">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,500,300' rel='stylesheet' type='text/css'>
+<div id="mainButton">
+	<div class="btn-text" onclick="openForm()">Sign In</div>
+	<div class="modal">
+		<div class="close-button" onclick="closeForm()">x</div>
+		<div class="form-title">Sign In</div>
+		<div class="input-group">
+			<form method="POST">
+				{{ form.as_p }}
+				{% csrf_token %}
+		</div>
+				
+		<button type="submit" class="form-button">login</button>
+	</form>	
+		<form action="/newpage">
+		
+			
+			<button type="submit" class="form-button">newuser</button>
+		</form>
+				
+	</div>
+</div>
+<div class="codepen-by">covid prediction application</div>
+<!-- partial -->
+  <script  src="{% static 'all/script.js' %}"></script>
+  <h1>{{mes}}</h1>
+</body>
+</html>
+
+
+
+
+

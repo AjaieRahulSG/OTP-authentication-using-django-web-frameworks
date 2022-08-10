@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>enter details</title>
+</head>
+<body >
+
+<h1>Add New Employee Information here</h1>
+    <form method="POST">
+        {{ form.as_p }}
+        {% csrf_token %}
+        
+        <input type="submit" value="gooo">
+    </form>
+    
+    
+<hr>
+<h1 style="border: 10in;">{{mes}}</h1> 
+</body>
+</html>

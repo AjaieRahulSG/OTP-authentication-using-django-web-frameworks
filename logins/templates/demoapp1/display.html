@@ -1,0 +1,18 @@
+<html>
+   <head>
+        <title>apps</title>
+    </head>
+  <body>
+   <h1>user details</h1>
+   <table>
+{% for post in form %}
+
+    <tr>
+    <td><h1>{{ post.usname }}</h1></td>
+    <td><h2>{{ post.pasword }}</h2></td>
+    </tr>
+{% endfor %}
+   </table>
+       
+  </body>
+</html>
